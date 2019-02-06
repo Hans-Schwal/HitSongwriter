@@ -1,0 +1,71 @@
+/* Parallax header*/
+.paral {
+  min-height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* Style paragraphe parallax */
+.paral p {
+  font-size: 24px;
+  color:#f5f5f5;
+  text-align: center;
+  line-height: 60px;
+}
+/* h1 parallax */
+.paral h1 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 60px;
+  text-align: center;
+  padding-top: 60px;
+  line-height: 100px;
+}
+/* Images parallax */
+.paralsec {
+  background-image: url("https://afrikamusic.net/wp-content/uploads/2018/02/Live-Music.jpg");
+}
+.paralsec1 {
+  background-image: url("https://culture-ville-levallois.fr/wp-content/uploads/2017/10/pole-musiques-actuelles.png");
+}
+.paralsec2 {
+  background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/V1xq1AADx/cute-hispanic-couple-playing-guitar-serenading-on-beach-in-love-and-embrace_str6getx__F0000.png");
+}
+/* https://research.fb.com/wp-content/uploads/2018/05/music-hero2.jpg */
+/* Ajouter d'autres images pour d'autres sections ???*/
+
+/* retrait de la marge extérieure inférieure du Jumbotron */
+.jumbotron{
+  margin-bottom: 0;
+}
+/* Footer */
+.wn-footer {
+  padding: 2.5rem 0;
+  text-align: center;
+  color: white;
+  background-color: #607D8B;
+  border-top: .05rem solid #e5e5e5;
+}
+.wn-footer a {
+  color: yellow;
+}
+/* Header element parallax*/
+.paral {
+  min-height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* Paragraphe Parallax */
+.paral p {
+  font-size: 24px;
+  color:#f5f5f5;
+  text-align: center;
+  line-height: 60px;
+}
+/* Footer */
+footer{
+    background-color: #585858;
+    color: white;
+    text-align: center;
+}
+
