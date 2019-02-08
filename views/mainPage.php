@@ -5,6 +5,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+session_start();
+//require 'controllers/mainPageController.php';
 ?>
 <!doctype html>
 <html lang="fr" dir="ltr">
@@ -16,18 +18,42 @@
   <title>H!T Songwriter</title>
 </head>
 <body>
+    <?php 
+        if(isset($_SESSION['id-roles'])){
+            if ($_SESSION['id-roles'] == 2){
+            echo 'Utilisateur';
+            echo $_SESSION['id-roles'];
+            echo '<a href="../controlers/destroySessionControler.php">Deco</a>';
+        }elseif ($_SESSION['id-roles'] == 1){
+            echo 'Administrateur';
+            echo $_SESSION['id-roles'];
+            echo '<a href="../controlers/destroySessionControler.php">Deco</a>';
+        }else{
+            header('location:loginPage.php');
+        }
+    }
+    ?>
   <!--  Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <a class="navbar-brand" href="#">H!T Songwriter</a>
+    <a class="navbar-brand" href="index.php">H!T Songwriter</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="#">Un peu de théorie<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link active" href="#">Composez !</a>
-        <a class="nav-item nav-link active" href="#">Les progs les + populaires</a>
+        <a class="nav-item nav-link active" href="../views/compose.php">Composez !</a>
+        <a class="nav-item nav-link active" href="../views/popularProgressions.php">Les progs les + populaires</a>
         <a class="nav-item nav-link active" href="#">Votre espace</a>
+        <?php 
+            if (isset($_SESSION['pseudo'])){
+        ?>
+        <a class="nav-item nav-link active" href="index.php?disconnect">Deconnexion</a>
+            <?php }
+            if ($_SESSION['id_roles'] == 1){
+        ?>
+        <a class="nav-item nav-link active" href="adminPage.php">Page Admin</a>
+            <?php } ?>
       </div>
     </div>
   </nav>
@@ -36,9 +62,8 @@
     <h1 class="display-3">Bienvenue sur H!T Songwriter</h1>
     <p class="lead">Un hit en quelques clics!</p>
     <p class="lead">
-      <!-- <a class="btn btn-info btn-lg btn-md" href="#" role="button">Here is a button 1</a> -->
-      <a class="btn btn-success btn-lg" href="#" role="button">Créer votre compte!</a>
-      <a class="btn btn-danger btn-lg" href="#" role="button">Connectez-vous</a>
+      <a class="btn btn-success btn-lg" href="../views/createAccount.php" role="button">Créer votre compte!</a>
+      <a class="btn btn-danger btn-lg" href="../views/loginPage.php" role="button">Connectez-vous</a>
     </p>
   </div>
   <!-- Seconde section du parallax -->
@@ -54,7 +79,7 @@
     <h1 class="display-3">Seul(e) ou avec vos ami(e)s</h1>
     <p class="lead">Faites sonner vos émotions!</p>
     <p class="lead">
-      <a class="btn btn-primary btn-lg btn-md" href="themes.html" role="button">Les progs les + populaires !</a>
+      <a class="btn btn-primary btn-lg btn-md" href="../views/popularProgressions.php" role="button">Les progs les + populaires !</a>
     </p>
   </div>
 <!-- Footer -->

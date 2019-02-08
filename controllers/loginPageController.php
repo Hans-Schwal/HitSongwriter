@@ -32,8 +32,9 @@ $passwordCorrect = password_verify($_POST['password'] , $result[0]->password);
         session_start();
 // La fonction session_start() active la session où la valeur de l'id est recupérée dans le tableau (une ligne)
         $_SESSION['id'] = $result[0]->id;
-        $_SESSION['pseudo'] = $result[0]->pseudo;
+        $_SESSION['pseudo'] = $result[0]->userName;
         $_SESSION['mail'] = $mail;
+        $_SESSION['id_roles']= $result[0]->id_roles_defines;
         header('Location: ../index.php?success'); 
     }
     else {

@@ -11,6 +11,7 @@ require '../controllers/createAccountController.php';
  * de niveau E_COMPILE_ERROR. En d'autres termes, il stoppera le script alors que include n'émettra qu'une alerte 
  * de niveau E_WARNING, ce qui permet au script de continuer. 
  */
+//session_start();
 ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">

@@ -5,6 +5,8 @@
 * To change this template file, choose Tools | Templates
 * and open the template in the editor.
 */
+
+session_start();
 ?>
 <!doctype html>
 <html lang="fr" dir="ltr">
@@ -25,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="#">Un peu de théorie<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link active" href="#">Composez !</a>
+        <a class="nav-item nav-link active" href="../views/compose.php">Composez !</a>
         <a class="nav-item nav-link active" href="../views/popularProgressions.php">Les progs les + populaires</a>
         <a class="nav-item nav-link active" href="#">Votre espace</a>
       </div>

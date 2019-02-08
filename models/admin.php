@@ -26,27 +26,6 @@ class admin extends database {
     }
 //    __construct() est la seule fonction qui s'execute au moment de l'instanciation d'une classe    
 
-    public function createAdminAccount(){
-        $query = 'INSERT INTO `users`(`lastName`, `firstName`, `mail`, `userName`, `password`,`id_roles_defines`) VALUES (:lastName, :firstName, :mail, :userName, :password, :id_roles_defines)';
-        $createAdminAcount = $this->db->prepare($query);
-        $createAdminAcount->bindValue(':lastName', $this->lastName, PDO::PARAM_STR);
-        $createAdminAcount->bindValue(':firstName', $this->firstName, PDO::PARAM_STR);
-        $createAdminAcount->bindValue(':mail', $this->mail, PDO::PARAM_STR);
-        $createAdminAcount->bindValue(':userName', $this->userName, PDO::PARAM_STR);
-        $createAdminAcount->bindValue(':password', $this->password, PDO::PARAM_STR);
-        $createAdminAcount->bindValue(':id_roles_defines', $this->id_roles_defines, PDO::PARAM_INT);
-        if($createAdminAcount->execute()){
-            return true;
-        }
-    }
-    
-    //    La methode suivante permet de rechercher le password et l'id d'un utilisateur de la table "users" via son adresse mail  
-    public function adminLogin(){
-        $query = "SELECT * FROM `users` WHERE `mail` = '$this->mail'";
-        $sql= $this->db->query($query);
-        $result = $sql->fetchAll(PDO::FETCH_OBJ);
-        return $result;
-    }
     
     //    La methode suivante permet d'afficher les valeurs de ma table users, en fonction du mail renseigné , grâce à une requete preparee
     public function showUsers(){
@@ -81,8 +60,8 @@ class admin extends database {
     }
     
     public function listUsers(){
-        $listUsers = $this->db->query('SELECT * FROM `users`');
+        $listUsers = $this->db->query('SELECT * FROM `users` ORDER BY lastName ASC');
         $tableUsers = $listUsers->fetchAll(PDO::FETCH_OBJ);
-        return $tableUsers;   
+        return $tableUsers;
     } 
 }

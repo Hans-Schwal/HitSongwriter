@@ -19,7 +19,7 @@ class users extends database{
     public $mail;
     public $userName;
     public $password;
-    public $id_roles_defines = 2;
+    public $id_roles_defines;
 
     public function __construct(){
          parent::__construct();
@@ -35,7 +35,7 @@ class users extends database{
         $createAccount->bindValue(':mail', $this->mail, PDO::PARAM_STR);
         $createAccount->bindValue(':userName', $this->userName, PDO::PARAM_STR);
         $createAccount->bindValue(':password', $this->password, PDO::PARAM_STR);
-        $createAccount->bindValue(':id_roles_defines', $this->id_roles_defines, PDO::PARAM_INT);
+        $createAccount->bindValue(':id_roles_defines', 2, PDO::PARAM_INT);
         if($createAccount->execute()){
             return true;
         }
