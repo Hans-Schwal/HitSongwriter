@@ -5,13 +5,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */ 
+session_start();
 require '../controllers/loginPageController.php';
 /*
  * require est identique à include mis à part le fait que lorsqu'une erreur survient, il produit également une erreur fatale 
  * de niveau E_COMPILE_ERROR. En d'autres termes, il stoppera le script alors que include n'émettra qu'une alerte 
  * de niveau E_WARNING, ce qui permet au script de continuer. 
  */
-session_start();
 ?>
 <!doctype html>
 <html lang="fr" dir="ltr">
@@ -60,8 +60,8 @@ session_start();
             </div>
             <input type="submit" name="submit" class="btn btn-danger" value="Me connecter">
           </form>
-          <a href="createAccount.php">Créer un compte</a>
-          <a href="mainPage.php">Page principale</a>          
+          <a class="btn btn-primary" href="createAccount.php">Créer un compte</a>
+          <a class="btn btn-warning" href="../index.php">Page principale</a>          
         </div>
       </div>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

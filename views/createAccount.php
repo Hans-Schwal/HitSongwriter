@@ -91,7 +91,7 @@ require '../controllers/createAccountController.php';
             </div>
             <button type="submit" value="Submit" name="submit" class="btn btn-success">Créer mon compte!</button>
           </form>
-          <a href="loginPage.php">J'ai déjà un compte</a>
+          <a class="btn btn-warning" href="loginPage.php">J'ai déjà un compte</a>
         </div>
       </div>
       <div class="col-sm-4"></div>

@@ -27,7 +27,7 @@ if($_SESSION['id_roles'] !=1){
         <div class="container">
             <div class="row">
                 <p>
-                    <a href="mainPage.php" class="btn btn-success">Retour Accueil</a>
+                    <a href="../index.php" class="btn btn-success">Retour Accueil</a>
                 </p>
                 <table class="table table-striped table-bordered">
                   <thead>

@@ -14,6 +14,12 @@ require_once '../models/admin.php';
  * et si c'est le cas, ne l'inclut pas une deuxième fois. 
  */
 
+if(isset($_GET['disconnect'])){
+    session_destroy();
+    header('location:../index.php');
+}
+
+
 if(isset($_POST["submit"])){
 $verifPassword = new users();
 //  Instanciation de l'objet $verifPassword à la classe users
