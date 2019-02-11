@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 require '../controllers/deleteController.php';
 if($_SESSION['id_roles'] !=1){
     header('Location: mainPage.php');
@@ -23,16 +23,17 @@ if($_SESSION['id_roles'] !=1){
                     <div class="row">
                         <h3>Supprimer l'utilisateur</h3>
                     </div> 
-                    <form class="form-horizontal" action="delete.php" method="post">
+                    <form class="form-horizontal" action="delete.php?id=<?php echo $id?>" method="post">
                       <input type="hidden" name="id" value="<?php echo $id;?>"/>
                       <p class="alert alert-error">Sûr de vouloir supprimer ?</p>
                       <div class="form-actions">
-                          <button type="submit" class="btn btn-danger">Oui</button>
-                          <a class="btn" href="admin.php">No</a>
+                          <button type="submit" class="btn btn-success" name="delete">Oui</button>
+                          <a class="btn btn-danger" href="adminPage.php">Non</a>
+                          <a class="btn btn-warning" href="adminPage.php">Retour à la page Admin</a>
                         </div>
                     </form>
                 </div>                
-    </div> <!-- /container -->
+    </div> 
   </body>
 </html>
 

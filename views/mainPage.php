@@ -50,7 +50,7 @@ session_start();
         <?php 
             if (isset($_SESSION['pseudo'])){
         ?>
-        <a class="nav-item nav-link active" href="index.php?disconnect">Deconnexion</a>
+        <a class="nav-item nav-link active" href="../index.php?disconnect">Deconnexion</a>
             <?php }
             if ($_SESSION['id_roles'] == 1){
         ?>
