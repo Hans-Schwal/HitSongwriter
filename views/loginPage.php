@@ -61,6 +61,7 @@ session_start();
             <input type="submit" name="submit" class="btn btn-danger" value="Me connecter">
           </form>
           <a href="createAccount.php">Créer un compte</a>
+          <a href="mainPage.php">Page principale</a>          
         </div>
       </div>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

@@ -37,7 +37,7 @@ session_start();
     ?>
   <!--  Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <a class="navbar-brand" href="index.php">H!T Songwriter</a>
+    <a class="navbar-brand" href="../index.php">H!T Songwriter</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -48,13 +48,14 @@ session_start();
         <a class="nav-item nav-link active" href="../views/popularProgressions.php">Les progs les + populaires</a>
         <a class="nav-item nav-link active" href="#">Votre espace</a>
         <?php 
-            if (isset($_SESSION['pseudo'])){
+            if (isset($_SESSION['userName'])){
         ?>
-        <a class="nav-item nav-link active" href="../index.php?disconnect">Deconnexion</a>
+        <a class="nav-item nav-link active" href="loginPage.php?disconnect">Deconnexion</a>
             <?php }
             if ($_SESSION['id_roles'] == 1){
         ?>
         <a class="nav-item nav-link active" href="views/adminPage.php">Page Admin</a>
+        <a class="nav-item nav-link active" href="loginPage.php?disconnect">Deconnexion</a>
             <?php } ?>
       </div>
     </div>

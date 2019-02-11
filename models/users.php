@@ -51,7 +51,7 @@ class users extends database{
     
     //    La methode suivante permet d'afficher les valeurs de ma table users, en fonction du mail renseigné , grâce à une requete preparee
     public function showUsers(){
-        $query = "SELECT `lastName`,`firstName`,`pseudo`,`mail` FROM `users` WHERE '$this->mail'";
+        $query = "SELECT `lastName`,`firstName`,`mail`,`userName`, `password` FROM `users` WHERE '$this->mail'";
         $showUser= $this->db->query($query);
         $result = $showUser->fetchAll(PDO::FETCH_OBJ);
         return $result;
