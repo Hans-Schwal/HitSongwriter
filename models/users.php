@@ -59,13 +59,12 @@ class users extends database{
     
     
      public function updateUsers(){
-        $query = 'UPDATE `users` SET `lastname` = :lastname, `firstname` = :firstname, `mail` = :mail, `userName` = :userName, `password` = :password WHERE `id` = :id';
+        $query = 'UPDATE `users` SET `lastName` = :lastName, `firstName` = :firstName, `mail` = :mail, `userName` = :userName WHERE `id` = :id';
         $updateUsers = $this->db->prepare($query);
-        $updateUsers->bindValue(':lastname', $this->lastname, PDO::PARAM_STR);
-        $updateUsers->bindValue(':firstname', $this->firstname, PDO::PARAM_STR);
+        $updateUsers->bindValue(':lastName', $this->lastName, PDO::PARAM_STR);
+        $updateUsers->bindValue(':firstName', $this->firstName, PDO::PARAM_STR);
         $updateUsers->bindValue(':mail', $this->mail, PDO::PARAM_STR);
         $updateUsers->bindValue(':userName', $this->userName, PDO::PARAM_STR);
-        $updateUsers->bindValue(':password', $this->password, PDO::PARAM_STR);
         $updateUsers->bindValue(':id', $this->id, PDO::PARAM_INT);
         if($updateUsers->execute()){
             return true;

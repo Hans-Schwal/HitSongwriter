@@ -17,12 +17,12 @@ require '../controllers/createAccountController.php';
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../assets/css/createAccountStyle.css">
-  <title>H!T Songwriter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/createAccountStyle.css">
+    <title>H!T Songwriter</title>
   </head>
   <body>
   <!--  Navbar -->
