@@ -5,6 +5,7 @@
  * de niveau E_COMPILE_ERROR. En d'autres termes, il stoppera le script alors que include n'émettra qu'une alerte 
  * de niveau E_WARNING, ce qui permet au script de continuer. 
  */
+
 session_start();
 if($_SESSION['id_roles'] !=1){
     header('Location: mainPage.php');
@@ -50,8 +51,8 @@ if($_SESSION['id_roles'] !=1){
                             echo '<td>'. $row->userName . '</td>';
                             echo '<td>'. $row->password . '</td>';
                             echo '<td width=250>';
-                                echo '<a class="btn btn-success" href="read.php?id='.$row->id.'">Voir</a>';
-                                echo ' ';
+//                                echo '<a class="btn btn-success" href="read.php?id='.$row->id.'">Voir</a>';
+//                                echo ' ';
                                 echo '<a class="btn btn-warning" href="update.php?id='.$row->id.'">Modifier</a>';
                                 echo ' ';
                                 echo '<a class="btn btn-danger" href="delete.php?id='.$row->id.'">Supprimer</a>';

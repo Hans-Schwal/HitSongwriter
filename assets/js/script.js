@@ -1,0 +1,3 @@
+function disconnect(){
+  alert ("Deconnexion")
+  }  

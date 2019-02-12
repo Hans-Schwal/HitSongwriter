@@ -64,15 +64,7 @@ if(isset($_POST["submit"])){
     $passwordHash = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $admin->password = $passwordHash;
     
-    /*
-     * La fonction password_hash() crée un nouveau hachage en utilisant un algorithme de hachage fort et irréversible. 
-     * La fonction password_hash() est compatible avec la fonction crypt(). Aussi, un mot de passe haché par la fonction 
-     * crypt() peut être utilisé avec la fonction password_hash().
-     * PASSWORD_BCRYPT permet l'utilisation de l'algorithme CRYPT_BLOWFISH pour créer la clé de hachage. 
-     * Ceci va créer une clé de hachage standard crypt() utilisant l'identifiant "$2y$". 
-     * Le résultat sera toujours une chaîne de 60 caractères, ou FALSE si une erreur survient.
-     */
-    
+   
     if($admin->createAccount()){
         header('Location: ../views/loginPage.php?success'); 
     }else{

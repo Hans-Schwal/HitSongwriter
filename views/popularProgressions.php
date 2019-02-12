@@ -13,7 +13,9 @@ session_start();
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/popularProgressionsStyle.css">
   <title>H!T Songwriter</title>
 </head>
@@ -121,11 +123,11 @@ session_start();
             </div>
             <div class="col-sm-3">
               <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="../assets/img/linkin_park.jpg" alt="Linkin_Park_Numb">
+                  <img class="card-img-top" src="../assets/img/john_legend.jpeg" alt="John_Legend_All_Of_Me">
                 <div class="card-body">
-                  <h5 class="card-title">Numb</h5>
-                  <p class="card-text">Linkin Park</p>
-                  <a href="https://www.youtube.com/watch?v=kXYiU_JCYtU" target="_blank" class="btn btn-danger">Ecouter</a>
+                  <h5 class="card-title">All Of Me</h5>
+                  <p class="card-text">John Legend</p>
+                  <a href="https://www.youtube.com/watch?v=450p7goxZqg" target="_blank" class="btn btn-danger">Ecouter</a>
                 </div>
               </div> 
             </div>
@@ -396,11 +398,11 @@ session_start();
             </div>
             <div class="col-sm-3">
               <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="../assets/img/foreigner.jpeg" alt="Foreigner_I_Want_To_Know_What_Love_Is">
+                  <img class="card-img-top" src="../assets/img/taylor_swift.jpeg" alt="Taylor_Swift_Style">
                 <div class="card-body">
-                  <h5 class="card-title">I Want To Know What Love Is</h5>
-                  <p class="card-text">Foreigner</p>
-                  <a href="https://www.youtube.com/watch?v=raNGeq3_DtM" target="_blank" class="btn btn-danger">Ecouter</a>
+                  <h5 class="card-title">Style</h5>
+                  <p class="card-text">Taylor Swift</p>
+                  <a href="https://www.youtube.com/watch?v=-CmadmM5cOk" target="_blank" class="btn btn-danger">Ecouter</a>
                 </div>
               </div>
             </div>
@@ -471,11 +473,11 @@ session_start();
           <div class="row">
             <div class="col-sm-3">
               <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="../assets/img/aha.jpeg" alt="A-ha_Take_On_Me">
+                  <img class="card-img-top" src="../assets/img/boston.jpeg" alt="Boston_More_Than_A_Feeling">
                 <div class="card-body">
-                  <h5 class="card-title">Take On Me</h5>
-                  <p class="card-text">A-ha</p>
-                  <a href="https://www.youtube.com/watch?v=djV11Xbc914" target="_blank" class="btn btn-danger">Ecouter</a>
+                  <h5 class="card-title">More Than A Feeling</h5>
+                  <p class="card-text">Boston</p>
+                  <a href="" target="_blank" class="btn btn-danger">Ecouter</a>
                 </div>
               </div>
             </div>
@@ -585,10 +587,14 @@ session_start();
               </div> 
             </div>    
      
-  <script src="script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../assets/js/script.js"></script>
+   </body>
 </html>
 

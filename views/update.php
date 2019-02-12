@@ -29,7 +29,8 @@ if($_SESSION['id_roles'] !=1){
                         <label class="control-label">Nom</label>
                         <div class="controls">
                             <input name="lastName" type="text"  placeholder="Nom" value="<?php echo !empty($lastName)?$lastName:'';?>">
-                            <?php if (!empty($lastNameError)): ?>
+                            <?php 
+                            if (!empty($lastNameError)): ?>
                                 <span class="help-inline"><?php echo $lastNameError;?></span>
                             <?php endif; ?>
                         </div>

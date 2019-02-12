@@ -13,8 +13,7 @@ require 'controllers/mainPageController.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <title>H!T Songwriter</title>
@@ -48,14 +47,14 @@ require 'controllers/mainPageController.php';
         <a class="nav-item nav-link active" href="views/popularProgressions.php">Les progs les + populaires</a>
         <a class="nav-item nav-link active" href="#">Votre espace</a>
         <?php 
-            if (isset($_SESSION['userName'])){
+            if (isset($_SESSION['id_roles'])){
         ?>
-        <a class="nav-item nav-link active" href="views/loginPage.php?disconnect">Deconnexion</a>
+        <a class="nav-item nav-link active" href="views/loginPage.php?disconnect" onclick="disconnect()">Deconnexion</a>
             <?php }
             if ($_SESSION['id_roles'] == 1){
         ?>
         <a class="nav-item nav-link active" href="views/adminPage.php">Page Admin</a>
-        <a class="nav-item nav-link active" href="views/loginPage.php?disconnect">Deconnexion</a>
+<!--        <a class="nav-item nav-link active" href="views/loginPage.php?disconnect" onclick="disconnect()">Deconnexion</a>-->
             <?php } ?>
       </div>
     </div>
@@ -90,7 +89,6 @@ require 'controllers/mainPageController.php';
     <p>Hans SCHWAL Titre Professionnel Développeur Web & Web Mobile 2018-2019 La MANU Amiens</p>
     <p>&#xA9; Tous droits réservés</p>
 </footer>
-</body>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
@@ -98,6 +96,6 @@ require 'controllers/mainPageController.php';
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/script.js"></script>
+  <script type="text/javascript" src="../assets/js/script.js"></script>
 </body>
 </html>

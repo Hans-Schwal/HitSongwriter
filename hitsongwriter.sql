@@ -100,39 +100,4 @@ VALUES ('La plus populaire de toutes!','I V vi IV'),
 ('La préférée','vi I IV ii');
 
 
-# INSERT INTO `minorScales` (`scale`, `firstDegree`, `secondDegree`, `thirdDegree`, `fourthDegree`, `fifthDegree`, `sixthDegree`, `seventhDegree`)
-# VALUES ('C minor','Cmin','Ddim','Eb','Fmin','Gmin','Ab','Bb'),
-# ('C# minor','C#min','D#dim','E','F#min','G#min','A','B'),
-# ('D minor','Dmin','Edim','F','Gmin','Amin','Bb','C'),
-# ('Eb minor','Ebmin','Fdim','Gb','Abmin','Bbmin','Cb','Db'),
-# ('E minor','Emin','F#dim','G','Amin','Bmin','C','D'),
-# ('F minor','Fmin','Gdim','Ab','Bbmin','Cmin','Db','Eb'),
-# ('F# minor','F#min','G#dim','A','Bmin','C#min','D','E'),
-# ('G minor','Gmin','Adim','Bb','Cmin','Dmin','Eb','F'),
-# ('Ab minor','Abmin','Bbdim','Cb','Dbmin','Ebmin','Fb','Gb'),
-# ('A minor','Amin','Bdim','C','Dmin','Emin','F','G'),
-# ('Bb minor','Bbmin','Cdim','Db','Ebmin','Fmin','Gb','Ab'),
-# ('B minor','Bmin','C#dim','D','Emin','F#min','G','A');
-
-# INSERT INTO `majorScales` (`scale`, `firstDegree`, `secondDegree`, `thirdDegree`, `fourthDegree`, `fifthDegree`, `sixthDegree`, `seventhDegree`)
-# VALUES ('C major','C','Dmin','Emin','F','G','Amin','Bdim'),
-# ('C# major','C#','D#min','E#min','F#','G#','A#min','B#dim'),
-# ('D major','D','Emin','F#min','G','A','Bmin','C#dim'),
-# ('Eb major','Eb','Fmin','Gmin','Ab','Bb','Cmin','Ddim'),
-# ('E major','E','F#min','G#min','A','B','C#min','D#dim'),
-# ('F major','F','Gmin','Amin','Bb','C','Dmin','Edim'),
-# ('F# major','F#','G#min','A#min','B','C#','D#min','E#dim'),
-# ('G major','G','Amin','Bmin','C','D','Emin','F#dim'),
-# ('Ab major','Ab','Bbmin','Cmin','Db','Eb','Fmin','Gdim'),
-# ('A major','A','Bmin','C#min','D','E','F#min','G#dim'),
-# ('Bb major','Bb','Cmin','Dmin','Eb','F','Gmin','Adim'),
-# ('B major','B','C#min','D#min','E','F#','G#min','A#dim');
-
-# ALTER TABLE personalSpace 
-# ADD CONSTRAINT FK_personalSpace_id_users
-#  FOREIGN KEY (id_userName)
-#  REFERENCES users (id)
-#  ON DELETE CASCADE
-#  ON UPDATE NO ACTION;
-
 
