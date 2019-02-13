@@ -85,10 +85,10 @@ require 'controllers/mainPageController.php';
     </p>
   </div>
 <!-- Footer -->
-<footer>
-    <p>Hans SCHWAL Titre Professionnel Développeur Web & Web Mobile 2018-2019 La MANU Amiens</p>
-    <p>&#xA9; Tous droits réservés</p>
-</footer>
+    <footer>
+        <p>Hans SCHWAL Titre Professionnel Développeur Web & Web Mobile 2018-2019 La MANU Amiens</p>
+        <p>&#xA9; Tous droits réservés</p>
+    </footer>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>

@@ -1,10 +1,4 @@
 <?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 session_start();
 ?>
 <!doctype html>
@@ -41,11 +35,89 @@ session_start();
       <p class="lead">A vous de jouer, exprimez-vous!</p>
     </div>
   </div>
-  <div class="jumbotron jumbotron-fluid">
-
-
-
   
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <p class="display-4">Do majeur<p>
+      <p class="lead">Ordonnez vos degrés</p>
+          
+        <div class="row">  
+          <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">I</h3>
+            </div>
+               <audio controls>
+                   <source src="../assets/audio/C_majeur.wav" type="audio/wav">
+                </audio> 
+          </div>
+          </div>
+          <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">ii</h3>
+            </div>
+               <audio controls>
+                   <source src="../assets/audio/D_mineur.wav" type="audio/wav">
+                </audio> 
+          </div>
+          </div>
+          <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">iii</h3>
+            </div>
+               <audio controls>
+                   <source src="../assets/audio/E_mineur.wav" type="audio/wav">
+                </audio> 
+          </div>
+          </div>
+          <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">IV</h3>
+            </div>
+               <audio controls>
+                   <source src="../assets/audio/F_majeur.wav" type="audio/wav">
+                </audio> 
+          </div>
+          </div>          
+        </div>
+       
+        <div class="row"> 
+          <div class="col-sm-3 offset-2">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">V</h3>
+            </div>
+               <audio controls>
+                   <source src="../assets/audio/G_majeur.wav" type="audio/wav">
+                </audio> 
+          </div>
+          </div>
+            <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">vi</h3>
+            </div>
+               <audio controls>
+                   <source src="../assets/audio/A_mineur.wav" type="audio/wav">
+                </audio> 
+          </div>
+          </div>
+            <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">vii</h3>
+            </div>
+               <audio controls>
+                   <source src="../assets/audio/B_dim.wav" type="audio/wav">
+                </audio> 
+          </div>
+          </div>
+        </div>    
+    </div>
+  </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
@@ -53,6 +125,7 @@ session_start();
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script></body>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
 </html>
 

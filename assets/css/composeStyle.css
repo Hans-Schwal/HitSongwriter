@@ -8,10 +8,16 @@ h2{
 }
 .card{
     color: black;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 .display-4_where{
     font-size: 150%;
 }
-
+footer{
+    background-color: #585858;
+    color: white;
+    text-align: center;  
+}
 
 
