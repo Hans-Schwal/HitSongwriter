@@ -35,12 +35,11 @@ session_start();
       <p class="lead">A vous de jouer, exprimez-vous!</p>
     </div>
   </div>
-  
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <p class="display-4">Do majeur<p>
-      <p class="lead">Ordonnez vos degrés</p>
-          
+      <p class="lead">Choisissez 4 degrés</p>
+          <!-- première rangée de cards -->
         <div class="row">  
           <div class="col-sm-3">
           <div class="card">
@@ -83,7 +82,7 @@ session_start();
           </div>
           </div>          
         </div>
-       
+       <!-- seconde rangée de cards -->
         <div class="row"> 
           <div class="col-sm-3 offset-2">
           <div class="card">
@@ -118,6 +117,11 @@ session_start();
         </div>    
     </div>
   </div>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h2 class="display-4">Votre composition</h2>
+    </div>
+    </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>

@@ -13,5 +13,15 @@
  */
 
 class savedProgressions extends database {
-    //put your code here
+    public $id;
+    public $scaleName;
+    public $scaleDegrees;
+    
+    public function __construct(){
+         parent::__construct();
+    }
+//    __construct() est la seule fonction qui s'execute au moment de l'instanciation d'une classe   
+  
+    
+    
 }

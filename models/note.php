@@ -13,5 +13,12 @@
  */
 
 class note extends database{
-    //put your code here
+    public $id;
+    public $note;
+    
+    public function __construct(){
+         parent::__construct();
+    }
+//    __construct() est la seule fonction qui s'execute au moment de l'instanciation d'une classe       
+    
 }
