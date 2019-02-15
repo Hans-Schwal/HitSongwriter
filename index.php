@@ -65,7 +65,7 @@ require 'controllers/mainPageController.php';
     <p class="lead">Un hit en quelques clics!</p>
     <p class="lead">
       <a class="btn btn-success btn-lg" href="views/createAccount.php" role="button">Créer votre compte!</a>
-      <a class="btn btn-danger btn-lg" href="views/loginPage.php" role="button">Connectez-vous</a>
+       <a class="btn btn-danger btn-lg" href="views/loginPage.php" role="button">Connectez-vous</a>
     </p>
   </div>
   <!-- Seconde section du parallax -->

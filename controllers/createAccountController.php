@@ -73,7 +73,7 @@ if(isset($_POST["submit"])){
     }
     
     }else{
-        echo 'erreur2';
+        echo 'Une erreur est survenue, veuillez remplir les champs correctement';
     }
 }
 ?>

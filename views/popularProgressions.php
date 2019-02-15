@@ -585,7 +585,8 @@ session_start();
                   <a href="https://www.youtube.com/watch?v=zW52pp_qKeM" target="_blank" class="btn btn-danger">Ecouter</a>
                 </div>
               </div> 
-            </div>    
+            </div>
+           <button class="btn btn-danger" onclick="topFunction()" id="myBtn" title="Haut de Page">Haut de page</button>    
      
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

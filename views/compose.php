@@ -45,76 +45,90 @@ session_start();
           <div class="card">
             <div class="card-body">
               <h3 class="card-title">I</h3>
+              <p>Do majeur</p>
             </div>
                <audio controls>
                    <source src="../assets/audio/C_majeur.wav" type="audio/wav">
                 </audio> 
           </div>
+            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>
           </div>
           <div class="col-sm-3">
           <div class="card">
             <div class="card-body">
               <h3 class="card-title">ii</h3>
+              <p>Ré mineur</p>
             </div>
                <audio controls>
                    <source src="../assets/audio/D_mineur.wav" type="audio/wav">
                 </audio> 
           </div>
+            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>              
           </div>
           <div class="col-sm-3">
           <div class="card">
             <div class="card-body">
               <h3 class="card-title">iii</h3>
+              <p>Mi mineur</p>
             </div>
                <audio controls>
                    <source src="../assets/audio/E_mineur.wav" type="audio/wav">
                 </audio> 
           </div>
+            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>              
           </div>
           <div class="col-sm-3">
           <div class="card">
             <div class="card-body">
               <h3 class="card-title">IV</h3>
+              <p>Fa majeur</p>
             </div>
                <audio controls>
                    <source src="../assets/audio/F_majeur.wav" type="audio/wav">
                 </audio> 
           </div>
+            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>
           </div>          
-        </div>
+        </div>          
        <!-- seconde rangée de cards -->
         <div class="row"> 
           <div class="col-sm-3 offset-2">
           <div class="card">
             <div class="card-body">
               <h3 class="card-title">V</h3>
+              <p>Sol majeur</p>
             </div>
                <audio controls>
                    <source src="../assets/audio/G_majeur.wav" type="audio/wav">
                 </audio> 
           </div>
+            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>
           </div>
             <div class="col-sm-3">
           <div class="card">
             <div class="card-body">
               <h3 class="card-title">vi</h3>
+              <p>La mineur</p>
             </div>
                <audio controls>
                    <source src="../assets/audio/A_mineur.wav" type="audio/wav">
                 </audio> 
           </div>
+            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>                
           </div>
             <div class="col-sm-3">
           <div class="card">
             <div class="card-body">
               <h3 class="card-title">vii</h3>
+              <p>Si diminué</p>
             </div>
                <audio controls>
                    <source src="../assets/audio/B_dim.wav" type="audio/wav">
                 </audio> 
           </div>
+            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>                
           </div>
-        </div>    
+        </div>
     </div>
   </div>
     <div class="jumbotron jumbotron-fluid">

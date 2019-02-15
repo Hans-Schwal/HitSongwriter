@@ -25,7 +25,7 @@ if($_SESSION['id_roles'] !=1){
   </head>
   <body>
     <h1>Page Administrateur</h1>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <p>
                     <a href="../index.php" class="btn btn-success">Retour Accueil</a>
