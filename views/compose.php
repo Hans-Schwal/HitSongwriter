@@ -13,7 +13,7 @@ session_start();
   <title>H!T Songwriter</title>
 </head>
 <body>
-  <!--  Navbar -->
+    <!-- Navbar --> 
   <nav class="navbar navbar-expand-lg navbar-dark bg-info">
     <a class="navbar-brand" href="../index.php">H!T Songwriter</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,9 +22,18 @@ session_start();
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="#">Un peu de théorie<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link active" href="#">Composez !</a>
-        <a class="nav-item nav-link active" href="../views/popularProgressions.php">Les progs les + populaires</a>
-        <a class="nav-item nav-link active" href="#">Votre espace</a>
+        <a class="nav-item nav-link active" href="compose.php">Composez !</a>
+        <a class="nav-item nav-link active" href="popularProgressions.php">Les progs les + populaires</a>
+        <a class="nav-item nav-link active" href="personalSpace.php">Votre espace</a>
+        <?php 
+            if (isset($_SESSION['id_roles'])){
+        ?>
+        <a class="nav-item nav-link active" href="loginPage.php?disconnect" onclick="disconnect()">Deconnexion</a>
+            <?php }
+            if ($_SESSION['id_roles'] == 1){
+        ?>
+        <a class="nav-item nav-link active" href="adminPage.php">Page Admin</a>
+            <?php } ?>
       </div>
     </div>
   </nav>
