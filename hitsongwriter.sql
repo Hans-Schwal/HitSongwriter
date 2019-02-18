@@ -41,10 +41,13 @@ CREATE TABLE users(
 CREATE TABLE compositionCategory(
         id           Int  Auto_increment  NOT NULL ,
         categoryName Varchar (50) NOT NULL ,
-        firstDegree  Int NOT NULL ,
-        secondDegree Int NOT NULL ,
-        thirdDegree  Int NOT NULL ,
-        fourthDegree Int NOT NULL
+        firstDegree  Varchar (50) NOT NULL ,
+        secondDegree Varchar (50) NOT NULL ,
+        thirdDegree  Varchar (50) NOT NULL ,
+        fourthDegree Varchar (50) NOT NULL ,
+        fifthDegree  Varchar (50) NOT NULL ,
+        sixthDegree  Varchar (50) NOT NULL ,
+        seventhDegree Varchar (50) NOT NULL
 	,CONSTRAINT compositionCategory_PK PRIMARY KEY (id)
 )ENGINE=InnoDB;
 
@@ -56,7 +59,10 @@ CREATE TABLE compositionCategory(
 CREATE TABLE savedProgressions(
         id                     Int  Auto_increment  NOT NULL ,
         scaleName              Varchar (50) NOT NULL ,
-        scaleDegrees           Varchar (50) NOT NULL ,
+        firstChosenDegree      Varchar (50) NOT NULL ,
+        secondChosenDegree     Varchar (50) NOT NULL ,
+        thirdChosenDegree      Varchar (50) NOT NULL ,
+        fourthChosenDegree     Varchar (50) NOT NULL ,
         id_users               Int NOT NULL ,
         id_compositionCategory Int NOT NULL
 	,CONSTRAINT savedProgressions_PK PRIMARY KEY (id)
@@ -99,5 +105,6 @@ VALUES ('La plus populaire de toutes!','I V vi IV'),
 ('Intemporelle','I V IV V'),
 ('La préférée','vi I IV ii');
 
-
+INSERT INTO `compositionCategory` (`categoryName`, `firstDegree`, `secondDegree`, `thirdDegree`, `fourthDegree`, `fifthDegree`, `sixthDegree`, `seventhDegree`)
+VALUES ('cMajorScale','cMajor','dMinor','eMinor','fMajor','gMajor','aMinor','bDiminished');
 

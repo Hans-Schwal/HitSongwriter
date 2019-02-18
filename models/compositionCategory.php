@@ -18,12 +18,15 @@ class compositionCategory extends database {
     public $firstDegree;
     public $secondDegree;
     public $thirdDegree;
-    public $fourthDegree;    
+    public $fourthDegree;  
+    public $fifthDegree; 
+    public $sixthDegree;  
+    public $seventhDegree;      
+
     
     public function __construct(){
          parent::__construct();
     }
 //    __construct() est la seule fonction qui s'execute au moment de l'instanciation d'une classe   
-
     
 }

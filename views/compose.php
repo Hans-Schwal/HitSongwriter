@@ -1,5 +1,6 @@
 <?php
 session_start();
+require '../controllers/composeController.php';
 ?>
 <!doctype html>
 <html lang="fr" dir="ltr">
@@ -60,7 +61,7 @@ session_start();
                    <source src="../assets/audio/C_majeur.wav" type="audio/wav">
                 </audio> 
           </div>
-              <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>
+              <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>
           </div>
           <div class="col-sm-3">
           <div class="card">
@@ -72,7 +73,7 @@ session_start();
                    <source src="../assets/audio/D_mineur.wav" type="audio/wav">
                 </audio> 
           </div>
-            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>              
+              <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>              
           </div>
           <div class="col-sm-3">
           <div class="card">
@@ -84,7 +85,7 @@ session_start();
                    <source src="../assets/audio/E_mineur.wav" type="audio/wav">
                 </audio> 
           </div>
-            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>              
+            <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>              
           </div>
           <div class="col-sm-3">
           <div class="card">
@@ -96,7 +97,7 @@ session_start();
                    <source src="../assets/audio/F_majeur.wav" type="audio/wav">
                 </audio> 
           </div>
-            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>
+            <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>
           </div>          
         </div>          
        <!-- seconde rangée de cards -->
@@ -111,7 +112,7 @@ session_start();
                    <source src="../assets/audio/G_majeur.wav" type="audio/wav">
                 </audio> 
           </div>
-            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>
+            <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>
           </div>
             <div class="col-sm-3">
           <div class="card">
@@ -123,7 +124,7 @@ session_start();
                    <source src="../assets/audio/A_mineur.wav" type="audio/wav">
                 </audio> 
           </div>
-            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>                
+            <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>                
           </div>
             <div class="col-sm-3">
           <div class="card">
@@ -135,7 +136,7 @@ session_start();
                    <source src="../assets/audio/B_dim.wav" type="audio/wav">
                 </audio> 
           </div>
-            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>                
+            <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>                
           </div>
         </div>
     </div>
@@ -143,10 +144,9 @@ session_start();
     <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h2 class="display-4">Votre composition</h2>
+      <?php 
       
-
-  
-    </div>
+      ?>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
