@@ -2,7 +2,7 @@
 session_start();
 require '../controllers/readController.php';
 if($_SESSION['id_roles'] !=1){
-    header('Location: mainPage.php');
+    header('Location: index.php');
 }
 ?>
 <!doctype html>

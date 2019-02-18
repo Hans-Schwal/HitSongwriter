@@ -60,7 +60,7 @@ session_start();
                    <source src="../assets/audio/C_majeur.wav" type="audio/wav">
                 </audio> 
           </div>
-            <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>
+              <a class="btn btn-warning btn-lg" href="" role="button">Choisir</a>
           </div>
           <div class="col-sm-3">
           <div class="card">
@@ -143,6 +143,9 @@ session_start();
     <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h2 class="display-4">Votre composition</h2>
+      
+
+  
     </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -155,4 +158,3 @@ session_start();
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
-

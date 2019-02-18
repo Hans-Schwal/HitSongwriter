@@ -5,8 +5,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-session_start();
-//require 'controllers/mainPageController.php';
 ?>
 <!doctype html>
 <html lang="fr" dir="ltr">
@@ -58,43 +56,3 @@ session_start();
       </div>
     </div>
   </nav>
-  <!-- Première section du parallax -->
-  <div class="jumbotron paral paralsec">
-    <h1 class="display-3">Bienvenue sur H!T Songwriter</h1>
-    <p class="lead">Un hit en quelques clics!</p>
-    <p class="lead">
-      <a class="btn btn-success btn-lg" href="views/createAccount.php" role="button">Créer votre compte!</a>
-       <a class="btn btn-danger btn-lg" href="views/loginPage.php" role="button">Connectez-vous</a>
-    </p>
-  </div>
-  <!-- Seconde section du parallax -->
-  <div class="jumbotron paral paralsec1">
-    <h1 class="display-3">L'outil qui simplifie la composition !</h1>
-    <p class="lead">Une méthode rapide et efficace pour vous exprimer en musique !</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg btn-md" href="widgets.html" role="button">En savoir plus !</a>
-    </p>
-  </div>
-  <!-- Troisième section du parallax -->
-  <div class="jumbotron paral paralsec2">
-    <h1 class="display-3">Seul(e) ou avec vos ami(e)s</h1>
-    <p class="lead">Faites sonner vos émotions!</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg btn-md" href="views/popularProgressions.php" role="button">Les progs les + populaires !</a>
-    </p>
-  </div>
-<!-- Footer -->
-    <footer>
-        <p>Hans SCHWAL Titre Professionnel Développeur Web & Web Mobile 2018-2019 La MANU Amiens</p>
-        <p>&#xA9; Tous droits réservés</p>
-    </footer>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../assets/js/script.js"></script>
-</body>
-</html>

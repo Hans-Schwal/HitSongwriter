@@ -8,7 +8,7 @@
 
 session_start();
 if($_SESSION['id_roles'] !=1){
-    header('Location: mainPage.php');
+    header('Location: index.php');
 }else{
     require '../controllers/adminPageController.php';
 ?>

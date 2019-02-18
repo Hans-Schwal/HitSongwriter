@@ -20,13 +20,16 @@ class users extends database{
     public $userName;
     public $password;
     public $id_roles_defines;
-
+ 
     public function __construct(){
          parent::__construct();
     }
 //    __construct() est la seule fonction qui s'execute au moment de l'instanciation d'une classe
 
-    
+    /**
+     * 
+     * @return boolean
+     */
     public function createAccount(){
         $query = 'INSERT INTO `users`(`lastName`, `firstName`, `mail`, `userName`, `password`,`id_roles_defines`) VALUES (:lastName, :firstName, :mail, :userName, :password, :id_roles_defines)';
         $createAccount = $this->db->prepare($query);
@@ -42,6 +45,10 @@ class users extends database{
     }
     
     //    La methode suivante permet de rechercher le password et l'id d'un utilisateur de la table "users" via son adresse mail  
+    /**
+     * 
+     * @return type
+     */
     public function userLogin(){
         $query = "SELECT * FROM `users` WHERE `mail` = '$this->mail'";
         $sql= $this->db->query($query);
@@ -50,6 +57,10 @@ class users extends database{
     }
     
     //    La methode suivante permet d'afficher les valeurs de ma table users, en fonction du mail renseigné , grâce à une requete preparee
+    /**
+     * 
+     * @return type
+     */
     public function showUsers(){
         $query = "SELECT `lastName`,`firstName`,`mail`,`userName`, `password` FROM `users` WHERE '$this->mail'";
         $showUser= $this->db->query($query);
@@ -57,8 +68,11 @@ class users extends database{
         return $result;
     } 
     
-    
-     public function updateUsers(){
+    /**
+     * 
+     * @return boolean
+     */
+    public function updateUsers(){
         $query = 'UPDATE `users` SET `lastName` = :lastName, `firstName` = :firstName, `mail` = :mail, `userName` = :userName WHERE `id` = :id';
         $updateUsers = $this->db->prepare($query);
         $updateUsers->bindValue(':lastName', $this->lastName, PDO::PARAM_STR);
@@ -71,6 +85,10 @@ class users extends database{
         }
     }
     
+    /**
+     * 
+     * @return boolean
+     */
     public function deleteUsers(){
         $query = 'DELETE FROM `users` WHERE `id` = :id';
         $delete = $this->db->prepare($query);
@@ -80,6 +98,10 @@ class users extends database{
         }
     }
     
+    /**
+     * 
+     * @return type
+     */
     public function listUsers(){
         $listUsers = $this->db->query('SELECT * FROM `users`');
         $tableUsers = $listUsers->fetchAll(PDO::FETCH_OBJ);
