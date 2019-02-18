@@ -6,7 +6,6 @@
  * and open the template in the editor.
  */
 session_start();
-//require 'controllers/mainPageController.php';
 ?>
 <!doctype html>
 <html lang="fr" dir="ltr">

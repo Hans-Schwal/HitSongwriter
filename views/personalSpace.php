@@ -37,9 +37,18 @@ session_start();
             <?php } ?>
       </div>
     </div>
-  </nav>    
-    <h1>Bienvenue <?= $_SESSION['pseudo'] . ' '?></h1>
-    
+  </nav>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1>Bienvenue <?= $_SESSION['pseudo'] . ' '?></h1>        
+      <p class="lead">Vous êtes içi dans votre espace personnel</p>
+    </div>
+  </div>    
+   <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h2>Vos progressions enregistrées</h2>        
+    </div>
+  </div>     
     
    
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
