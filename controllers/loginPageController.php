@@ -34,19 +34,30 @@ $passwordCorrect = password_verify($_POST['password'] , $result[0]->password);
  * au même mot de passe haché dans la base de données
  */
 
+if(count($result) != 0){
+$passwordCorrect = password_verify($_POST['password'] , $result[0]->password);
+
     if ($passwordCorrect){
         session_start();
 // La fonction session_start() active la session où la valeur de l'id est recupérée dans le tableau (une ligne)
         $_SESSION['id'] = $result[0]->id;
-        $_SESSION['pseudo'] = $result[0]->userName;
+        $_SESSION['lastName'] = $result[0]->lastName;
+        $_SESSION['firstName'] = $result[0]->firstName;
         $_SESSION['mail'] = $mail;
+        $_SESSION['userName'] = $result[0]->userName;
+        $_SESSION['password'] = $result[0]->password;
         $_SESSION['id_roles']= $result[0]->id_roles_defines;
         header('Location: ../index.php?success'); 
+        exit;
     }
     else {
         ?>
-<p id="erreur"><?='Identifiant ou Mot de Passe non reconnu';?></p>
+<p class="erreur"><?='Identifiant et/ou Mot de Passe non reconnu';?></p>
 <?php
     }
+}else{ ?>
+<p class="erreur"><?='Mot de passe non reconnu';?></p> 
+<?php }
 }
 ?>
+

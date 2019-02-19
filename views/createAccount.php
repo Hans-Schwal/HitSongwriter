@@ -67,19 +67,19 @@ require '../controllers/createAccountController.php';
             <form method="post" action="../controllers/createAccountController.php">
             <div class="form-group">
               <label for="lastName">Nom</label>
-              <input type="text" name='lastName' id="lastName" class="form-control" placeholder="Nom" value='<?= htmlspecialchars($_POST['lastName']); ?>'/>
+              <input type="text" name='lastName' id="lastName" class="form-control" placeholder="Nom" value='<?=(isset($_POST['lastName'])) ? htmlspecialchars($_POST['lastName']) : NULL; ?>'/>
             </div>
             <div class="form-group">
               <label for="firstName">Prénom</label>
-              <input type="text" name='firstName' id="firstName" class="form-control" placeholder="Prénom" value='<?= htmlspecialchars($_POST['firstName']); ?>'/>
+              <input type="text" name='firstName' id="firstName" class="form-control" placeholder="Prénom" value='<?= (isset($_POST['firstName'])) ? htmlspecialchars($_POST['firstName']) : NULL; ?>'/>
             </div>
             <div class="form-group">
               <label for="mail">Adresse Mail</label>
-              <input type="email" name="mail" id="mail" class="form-control" placeholder="Mail" value='<?= htmlspecialchars($_POST['mail']); ?>'/>
+              <input type="email" name="mail" id="mail" class="form-control" placeholder="Mail" value='<?= (isset($_POST['mail'])) ? htmlspecialchars($_POST['mail']) : NULL; ?>'/>
             </div>
             <div class="form-group">
               <label for="userName">Nom d'utilisateur</label>
-              <input type="text" name='userName' id="userName" class="form-control" placeholder="Nom d'utilisateur" value='<?= htmlspecialchars($_POST['userName']); ?>'/>
+              <input type="text" name='userName' id="userName" class="form-control" placeholder="Nom d'utilisateur" value='<?= (isset($_POST['userName'])) ? htmlspecialchars($_POST['userName']) : NULL; ?>'/>
             </div>
             <div class="form-group">
               <label for="password">Mot de Passe</label>

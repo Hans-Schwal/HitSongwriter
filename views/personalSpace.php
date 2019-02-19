@@ -1,7 +1,9 @@
 <?php
-
 session_start();
-
+if($_SESSION['id_roles'] !=1){
+    header('Location: ../index.php');
+}else{
+    require '../controllers/personalSpaceController.php';
 ?>
 <!doctype html>
 <html lang="fr" dir="ltr">
@@ -45,8 +47,32 @@ session_start();
     </div>
   </div>    
    <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h2>Vos progressions enregistrées</h2>        
+    <div class="container-fluid">
+        <h2>Vos informations</h2>    
+        <table class="table table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Nom</th>
+                      <th>Prénom</th>
+                      <th>Mail</th>
+                      <th>Nom d'utilisateur</th>
+                      <th>Password</th>
+                      <th>Profil</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><?= $_SESSION['lastName'];?></td>
+                      <td><?= $_SESSION['firstName'];?></td>
+                      <td><?= $_SESSION['mail'];?></td>
+                      <td><?= $_SESSION['userName'];?></td>
+                      <td><?= $_SESSION['password'];?></td>
+                      <td><a class="btn btn-warning" href="update.php?id='.$row->id.'">Modifier</a>
+                          <a class="btn btn-danger" href="delete.php?id='.$row->id.'">Supprimer</a>
+                      </td>
+                    </tr>
+                  </tbody>
+        </table>
     </div>
   </div>     
     
@@ -59,6 +85,7 @@ session_start();
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../assets/js/script.js"></script>
+<?php } ?>
 </body>
 </html>
 

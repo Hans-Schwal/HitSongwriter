@@ -6,6 +6,9 @@
             <file>file:/home/hans/Documents/HitSongwriter/index.php</file>
             <file>file:/home/hans/Documents/HitSongwriter/controllers/composeController.php</file>
             <file>file:/home/hans/Documents/HitSongwriter/views/compose.php</file>
+            <file>file:/home/hans/Documents/HitSongwriter/models/compositionCategory.php</file>
+            <file>file:/home/hans/Documents/HitSongwriter/models/savedProgressions.php</file>
+            <file>file:/home/hans/Documents/HitSongwriter/models/users.php</file>
         </group>
     </open-files>
 </project-private>

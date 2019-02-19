@@ -28,8 +28,7 @@ if($_SESSION['id_roles'] !=1){
                       <div class="control-group <?php echo !empty($lastNameError)?'error':'';?>">
                         <label class="control-label">Nom</label>
                         <div class="controls">
-                            <input name="lastName" type="text"  placeholder="Nom" value="<?php echo !empty($lastName)?$lastName:'';?>">
-                            
+                            <input name="lastName" type="text"  placeholder="Nom" value="<?= $_SESSION['lastName'];?>">
                             <?php 
                             if (!empty($lastNameError)): ?>
                                 <span class="help-inline"><?php echo $lastNameError;?></span>
@@ -39,7 +38,7 @@ if($_SESSION['id_roles'] !=1){
                       <div class="control-group <?php echo !empty($firstNameError)?'error':'';?>">
                         <label class="control-label">Prénom</label>
                         <div class="controls">
-                            <input name="firstName" type="text"  placeholder="Prénom" value="<?php echo !empty($firstName)?$firstName:'';?>">
+                            <input name="firstName" type="text"  placeholder="Prénom" value="<?= $_SESSION['firstName'];?>">
                             <?php if (!empty($firstNameError)): ?>
                                 <span class="help-inline"><?php echo $firstNameError;?></span>
                             <?php endif; ?>
@@ -48,7 +47,7 @@ if($_SESSION['id_roles'] !=1){
                       <div class="control-group <?php echo !empty($mailError)?'error':'';?>">
                         <label class="control-label">Mail</label>
                         <div class="controls">
-                            <input name="mail" type="mail" placeholder="Mail" value="<?php echo !empty($mail)?$mail:'';?>">
+                            <input name="mail" type="mail" placeholder="Mail" value="<?= $_SESSION['mail'];?>">
                             <?php if (!empty($mailError)): ?>
                                 <span class="help-inline"><?php echo $mailError;?></span>
                             <?php endif;?>
@@ -57,21 +56,21 @@ if($_SESSION['id_roles'] !=1){
                       <div class="control-group <?php echo !empty($userNameError)?'error':'';?>">
                         <label class="control-label">Nom d'utilisateur</label>
                         <div class="controls">
-                            <input name="userName" type="text"  placeholder="Nom d'utilisateur" value="<?php echo !empty($userName)?$userName:'';?>">
+                            <input name="userName" type="text"  placeholder="Nom d'utilisateur" value="<?= $_SESSION['userName'];?>">
                             <?php if (!empty($userNameError)): ?>
                                 <span class="help-inline"><?php echo $userNameError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
-<!--                      <div class="control-group <?php echo !empty($passwordError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($passwordError)?'error':'';?>">
                         <label class="control-label">Mot de passe</label>
                         <div class="controls">
-                            <input name="password" type="text"  placeholder="Mot de passe" value="<?php echo !empty($password)?$password:'';?>">
+                            <input name="password" type="text"  placeholder="Mot de passe" value="<?= $_SESSION['password'];?>">
                             <?php if (!empty($passwordError)): ?>
                                 <span class="help-inline"><?php echo $passwordError;?></span>
                             <?php endif; ?>
                         </div>
-                      </div>-->
+                      </div>
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success" name="update">Modifier</button>
                           <a class="btn btn-danger" href="adminPage.php">Retour</a>
