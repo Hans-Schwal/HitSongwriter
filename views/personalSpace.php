@@ -1,9 +1,5 @@
 <?php
 session_start();
-if($_SESSION['id_roles'] !=1){
-    header('Location: ../index.php');
-}else{
-    require '../controllers/personalSpaceController.php';
 ?>
 <!doctype html>
 <html lang="fr" dir="ltr">
@@ -85,7 +81,6 @@ if($_SESSION['id_roles'] !=1){
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../assets/js/script.js"></script>
-<?php } ?>
 </body>
 </html>
 
