@@ -4,11 +4,12 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/hans/Documents/HitSongwriter/index.php</file>
-            <file>file:/home/hans/Documents/HitSongwriter/controllers/composeController.php</file>
-            <file>file:/home/hans/Documents/HitSongwriter/views/compose.php</file>
-            <file>file:/home/hans/Documents/HitSongwriter/models/compositionCategory.php</file>
-            <file>file:/home/hans/Documents/HitSongwriter/models/savedProgressions.php</file>
+            <file>file:/home/hans/Documents/HitSongwriter/views/updateByUser.php</file>
+            <file>file:/home/hans/Documents/HitSongwriter/views/personalSpace.php</file>
+            <file>file:/home/hans/Documents/HitSongwriter/assets/css/updateByUserStyle.css</file>
+            <file>file:/home/hans/Documents/HitSongwriter/controllers/updateByUserController.php</file>
             <file>file:/home/hans/Documents/HitSongwriter/models/users.php</file>
+            <file>file:/home/hans/Documents/HitSongwriter/views/adminPage.php</file>
         </group>
     </open-files>
 </project-private>

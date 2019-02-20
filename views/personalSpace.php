@@ -53,7 +53,7 @@ session_start();
                       <th>Mail</th>
                       <th>Nom d'utilisateur</th>
                       <th>Password</th>
-                      <th>Profil</th>
+<!--                      <th>Profil</th>-->
                     </tr>
                   </thead>
                   <tbody>
@@ -63,16 +63,11 @@ session_start();
                       <td><?= $_SESSION['mail'];?></td>
                       <td><?= $_SESSION['userName'];?></td>
                       <td><?= $_SESSION['password'];?></td>
-                      <td><a class="btn btn-warning" href="update.php?id='.$row->id.'">Modifier</a>
-                          <a class="btn btn-danger" href="delete.php?id='.$row->id.'">Supprimer</a>
-                      </td>
                     </tr>
                   </tbody>
         </table>
     </div>
-  </div>     
-    
-   
+  </div>       
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
