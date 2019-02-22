@@ -38,6 +38,7 @@ if($_SESSION['id_roles'] !=1){
                       <th>Mail</th>
                       <th>Nom d'utilisateur</th>
                       <th>Password</th>
+                      <th>Rôle</th>
                       <th>Profil</th>
                     </tr>
                   </thead>
@@ -50,9 +51,8 @@ if($_SESSION['id_roles'] !=1){
                             echo '<td>'. $row->mail . '</td>';
                             echo '<td>'. $row->userName . '</td>';
                             echo '<td>'. $row->password . '</td>';
+                            echo '<td>'. $row->name . '</td>';
                             echo '<td width=250>';
-//                                echo '<a class="btn btn-success" href="read.php?id='.$row->id.'">Voir</a>';
-//                                echo ' ';
                                 echo '<a class="btn btn-warning" href="update.php?id='.$row->id.'">Modifier</a>';
                                 echo ' ';
                                 echo '<a class="btn btn-danger" href="delete.php?id='.$row->id.'">Supprimer</a>';

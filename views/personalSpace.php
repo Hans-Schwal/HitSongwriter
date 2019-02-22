@@ -53,7 +53,7 @@ session_start();
                       <th>Mail</th>
                       <th>Nom d'utilisateur</th>
                       <th>Password</th>
-<!--                      <th>Profil</th>-->
+                      <th>Profil</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -63,6 +63,9 @@ session_start();
                       <td><?= $_SESSION['mail'];?></td>
                       <td><?= $_SESSION['userName'];?></td>
                       <td><?= $_SESSION['password'];?></td>
+                      <td>
+                          <a class="btn btn-warning" href="updateByUser.php">Modifier</a>'
+                      </td>
                     </tr>
                   </tbody>
         </table>

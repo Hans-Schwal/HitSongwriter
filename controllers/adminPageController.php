@@ -1,6 +1,6 @@
 <?php
 require '../models/database.php';
-require '../models/admin.php';
+require '../models/role.php';
 
-$adminTask = new admin();
-$rows = $adminTask->listUsers();
+$adminTask = new role();
+$rows = $adminTask->showRoles();
