@@ -14,7 +14,7 @@ require '../controllers/composeController.php';
   <title>H!T Songwriter</title>
 </head>
 <body>
-    <!-- Navbar --> 
+  <!-- Navbar --> 
   <nav class="navbar navbar-expand-lg navbar-dark bg-info">
     <a class="navbar-brand" href="../index.php">H!T Songwriter</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,14 +27,14 @@ require '../controllers/composeController.php';
         <a class="nav-item nav-link active" href="popularProgressions.php">Les progs les + populaires</a>
         <a class="nav-item nav-link active" href="personalSpace.php">Votre espace</a>
         <?php 
-            if (isset($_SESSION['id_roles'])){
-        ?>
-        <a class="nav-item nav-link active" href="loginPage.php?disconnect" onclick="disconnect()">Deconnexion</a>
-            <?php }
-            if ($_SESSION['id_roles'] == 1){
-        ?>
-        <a class="nav-item nav-link active" href="adminPage.php">Page Admin</a>
-            <?php } ?>
+        if (isset($_SESSION['id_roles'])){
+          ?>
+          <a class="nav-item nav-link active" href="loginPage.php?disconnect" onclick="disconnect()">Deconnexion</a>
+        <?php }
+        if ($_SESSION['id_roles'] == 1){
+          ?>
+          <a class="nav-item nav-link active" href="adminPage.php">Page Admin</a>
+        <?php } ?>
       </div>
     </div>
   </nav>
@@ -48,113 +48,113 @@ require '../controllers/composeController.php';
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <p class="display-4">Do majeur<p>
-      <p class="lead">Choisissez 4 degrés</p>
-          <!-- première rangée de cards -->
+        <p class="lead">Choisissez 4 degrés</p>
+        <!-- première rangée de cards -->
         <div class="row">  
           <div class="col-sm-3">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">I</h3>
-              <p>Do majeur</p>
-            </div>
-               <audio controls>
-                   <source src="../assets/audio/C_majeur.wav" type="audio/wav">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">I</h3>
+                <p>Do majeur</p>
+              </div>
+              <audio controls>
+                <source src="../assets/audio/C_majeur.wav" type="audio/wav">
                 </audio> 
-          </div>
+              </div>
               <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>
-          </div>
-          <div class="col-sm-3">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">ii</h3>
-              <p>Ré mineur</p>
             </div>
-               <audio controls>
-                   <source src="../assets/audio/D_mineur.wav" type="audio/wav">
-                </audio> 
-          </div>
-              <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>              
-          </div>
-          <div class="col-sm-3">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">iii</h3>
-              <p>Mi mineur</p>
-            </div>
-               <audio controls>
-                   <source src="../assets/audio/E_mineur.wav" type="audio/wav">
-                </audio> 
-          </div>
-            <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>              
-          </div>
-          <div class="col-sm-3">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">IV</h3>
-              <p>Fa majeur</p>
-            </div>
-               <audio controls>
-                   <source src="../assets/audio/F_majeur.wav" type="audio/wav">
-                </audio> 
-          </div>
-            <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>
-          </div>          
-        </div>          
-       <!-- seconde rangée de cards -->
-        <div class="row"> 
-          <div class="col-sm-3 offset-2">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">V</h3>
-              <p>Sol majeur</p>
-            </div>
-               <audio controls>
-                   <source src="../assets/audio/G_majeur.wav" type="audio/wav">
-                </audio> 
-          </div>
-            <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>
-          </div>
             <div class="col-sm-3">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">vi</h3>
-              <p>La mineur</p>
-            </div>
-               <audio controls>
-                   <source src="../assets/audio/A_mineur.wav" type="audio/wav">
-                </audio> 
-          </div>
-            <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>                
-          </div>
-            <div class="col-sm-3">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">vii</h3>
-              <p>Si diminué</p>
-            </div>
-               <audio controls>
-                   <source src="../assets/audio/B_dim.wav" type="audio/wav">
-                </audio> 
-          </div>
-            <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>                
-          </div>
-        </div>
-    </div>
-  </div>
-    <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h2 class="display-4">Votre composition</h2>
-      <?php 
-      
-      ?>
-    </div>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">ii</h3>
+                  <p>Ré mineur</p>
+                </div>
+                <audio controls>
+                  <source src="../assets/audio/D_mineur.wav" type="audio/wav">
+                  </audio> 
+                </div>
+                <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>              
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title">iii</h3>
+                    <p>Mi mineur</p>
+                  </div>
+                  <audio controls>
+                    <source src="../assets/audio/E_mineur.wav" type="audio/wav">
+                    </audio> 
+                  </div>
+                  <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>              
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h3 class="card-title">IV</h3>
+                      <p>Fa majeur</p>
+                    </div>
+                    <audio controls>
+                      <source src="../assets/audio/F_majeur.wav" type="audio/wav">
+                      </audio> 
+                    </div>
+                    <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>
+                  </div>          
+                </div>          
+                <!-- seconde rangée de cards -->
+                <div class="row"> 
+                  <div class="col-sm-3 offset-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <h3 class="card-title">V</h3>
+                        <p>Sol majeur</p>
+                      </div>
+                      <audio controls>
+                        <source src="../assets/audio/G_majeur.wav" type="audio/wav">
+                        </audio> 
+                      </div>
+                      <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h3 class="card-title">vi</h3>
+                          <p>La mineur</p>
+                        </div>
+                        <audio controls>
+                          <source src="../assets/audio/A_mineur.wav" type="audio/wav">
+                          </audio> 
+                        </div>
+                        <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>                
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h3 class="card-title">vii</h3>
+                            <p>Si diminué</p>
+                          </div>
+                          <audio controls>
+                            <source src="../assets/audio/B_dim.wav" type="audio/wav">
+                            </audio> 
+                          </div>
+                          <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>                
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <h2 class="display-4">Votre composition</h2>
+                      <?php 
+                      
+                      ?>
+                    </div>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
