@@ -29,7 +29,6 @@ if(isset($_POST["submit"])){
   
   if(count($result) != 0){
     $passwordCorrect = password_verify($_POST['password'] , $result[0]->password);
-    
     if ($passwordCorrect){
       session_start();
       // La fonction session_start() active la session où la valeur de l'id est recupérée dans le tableau (une ligne)
@@ -40,6 +39,7 @@ if(isset($_POST["submit"])){
       $_SESSION['userName'] = $result[0]->userName;
       $_SESSION['password'] = $result[0]->password;
       $_SESSION['id_roles']= $result[0]->id_roles_defines;
+      sleep(1);
       header('Location: ../index.php?success'); 
       exit;
     }

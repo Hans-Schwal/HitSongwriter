@@ -12,7 +12,7 @@ if($_SESSION['id_roles'] !=1){
 }else{
   require '../controllers/adminPageController.php';
   ?>
-<!-- Ce if permet de rediriger vers la page index si la personne qui se connecte n'est pas un utilisateur. --> 
+<!-- Ce if permet de rediriger vers la page index si la personne qui se connecte n'est pas un administrateur. --> 
   <!doctype html>
   <html lang="fr" dir="ltr">
   <head>
