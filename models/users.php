@@ -112,6 +112,10 @@ class users extends database{
     return $tableUsers;   
   }
   
+  /**
+   * 
+   * @return type
+   */
   public function filterById() {
       $query = 'SELECT * FROM `users` WHERE `id`= :id';
       $filter = $this->db->prepare($query);
