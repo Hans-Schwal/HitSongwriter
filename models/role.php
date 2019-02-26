@@ -21,7 +21,7 @@ class role extends database{
   * @return type
   */
   public function showRoles(){
-    $query = 'SELECT `users`.`lastName`, `users`.`firstName`, `users`.`mail`, `users`.`userName`, `users`.`password`, `roles`.`name` FROM `roles` INNER JOIN `users` ON `roles`.`id` = `users`.`id_roles_defines`';
+    $query = 'SELECT `users`.`lastName`,`users`.`id`, `users`.`firstName`, `users`.`mail`, `users`.`userName`, `users`.`password`, `roles`.`name` FROM `roles` INNER JOIN `users` ON `roles`.`id` = `users`.`id_roles_defines`';
     $showInfo = $this->db->query($query);
     $showInfos = $showInfo->fetchAll(PDO::FETCH_OBJ);
     if(COUNT($showInfos) > 0){

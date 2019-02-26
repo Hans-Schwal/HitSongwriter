@@ -111,4 +111,18 @@ class users extends database{
     $tableUsers = $listUsers->fetchAll(PDO::FETCH_OBJ);
     return $tableUsers;   
   }
+  
+  public function filterById() {
+      $query = 'SELECT * FROM `users` WHERE `id`= :id';
+      $filter = $this->db->prepare($query);
+      $filter->bindValue(':id',$this->id,PDO::PARAM_INT);
+      if($filter->execute()){
+          $result=$filter->fetchAll(PDO::FETCH_OBJ);
+          $this->lastName=$result[0]->lastName;
+          $this->firstName=$result[0]->firstName;
+          $this->mail=$result[0]->mail;
+          $this->userName=$result[0]->userName;
+          return $result;
+      }        
+  }
 }

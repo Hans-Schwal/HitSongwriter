@@ -3,6 +3,9 @@ require '../models/database.php';
 require '../models/users.php';
 
 $id = $_GET['id'];
+$user = new users();
+$user->id = $id;
+$userInfo = $user->filterById();
 
 if(isset($_POST['update'])){
   $user = new users();
