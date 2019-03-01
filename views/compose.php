@@ -46,6 +46,7 @@ require '../controllers/composeController.php';
     </div>
   </div>
   <div class="jumbotron jumbotron-fluid">
+      <form>  
     <div class="container">
       <p class="display-4">Do majeur<p>
         <p class="lead">Choisissez 4 degrés</p>
@@ -61,7 +62,15 @@ require '../controllers/composeController.php';
                 <source src="../assets/audio/C_majeur.wav" type="audio/wav">
                 </audio> 
               </div>
-              <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>
+              <select name="do_majeur">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+              </select>
+              <input type="submit" value="choisir"/>
+<!--              <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>-->
             </div>
             <div class="col-sm-3">
               <div class="card">
@@ -73,7 +82,14 @@ require '../controllers/composeController.php';
                   <source src="../assets/audio/D_mineur.wav" type="audio/wav">
                   </audio> 
                 </div>
-                <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>              
+                <select name="ré_mineur">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+              </select>
+<!--                <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>              -->
               </div>
               <div class="col-sm-3">
                 <div class="card">
@@ -85,7 +101,14 @@ require '../controllers/composeController.php';
                     <source src="../assets/audio/E_mineur.wav" type="audio/wav">
                     </audio> 
                   </div>
-                  <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>              
+                  <select name="mi_mineur">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+              </select>
+<!--                  <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>              -->
                 </div>
                 <div class="col-sm-3">
                   <div class="card">
@@ -97,7 +120,14 @@ require '../controllers/composeController.php';
                       <source src="../assets/audio/F_majeur.wav" type="audio/wav">
                       </audio> 
                     </div>
-                    <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>
+                    <select name="fa_majeur">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+              </select>
+<!--                    <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>-->
                   </div>          
                 </div>          
                 <!-- seconde rangée de cards -->
@@ -112,7 +142,14 @@ require '../controllers/composeController.php';
                         <source src="../assets/audio/G_majeur.wav" type="audio/wav">
                         </audio> 
                       </div>
-                      <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>
+                      <select name="sol_majeur">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+              </select>
+<!--                      <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>-->
                     </div>
                     <div class="col-sm-3">
                       <div class="card">
@@ -123,8 +160,15 @@ require '../controllers/composeController.php';
                         <audio controls>
                           <source src="../assets/audio/A_mineur.wav" type="audio/wav">
                           </audio> 
-                        </div>
-                        <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>                
+                       </div>
+                        <select name="la_mineur">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+              </select>
+<!--                        <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>                -->
                       </div>
                       <div class="col-sm-3">
                         <div class="card">
@@ -136,18 +180,26 @@ require '../controllers/composeController.php';
                             <source src="../assets/audio/B_dim.wav" type="audio/wav">
                             </audio> 
                           </div>
-                          <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>                
+                          <select name="si_diminué">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+              </select>
+<!--                          <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>                -->
                         </div>
                       </div>
                     </div>
+                   </form> 
                   </div>
-                  <div class="jumbotron jumbotron-fluid">
+<!--                  <div class="jumbotron jumbotron-fluid">
                     <div class="container">
                       <h2 class="display-4">Votre composition</h2>
                       <?php 
                       
                       ?>
-                    </div>
+                    </div>-->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
