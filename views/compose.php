@@ -46,7 +46,8 @@ require '../controllers/composeController.php';
     </div>
   </div>
   <div class="jumbotron jumbotron-fluid">
-      <form>  
+      <!-- formulaire -->
+      <form action="compose.php" method="post">  
     <div class="container">
       <p class="display-4">Do majeur<p>
         <p class="lead">Choisissez 4 degrés</p>
@@ -62,6 +63,7 @@ require '../controllers/composeController.php';
                 <source src="../assets/audio/C_majeur.wav" type="audio/wav">
                 </audio> 
               </div>
+              <p>Position n° </p> 
               <select name="do_majeur">
                   <option value="0">0</option>
                   <option value="1">1</option>
@@ -69,7 +71,7 @@ require '../controllers/composeController.php';
                   <option value="3">3</option>
                   <option value="4">4</option>
               </select>
-              <input type="submit" value="choisir"/>
+              
 <!--              <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>-->
             </div>
             <div class="col-sm-3">
@@ -82,7 +84,8 @@ require '../controllers/composeController.php';
                   <source src="../assets/audio/D_mineur.wav" type="audio/wav">
                   </audio> 
                 </div>
-                <select name="ré_mineur">
+              <p>Position n° </p>                 
+                <select name="re_mineur">
                   <option value="0">0</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -101,6 +104,7 @@ require '../controllers/composeController.php';
                     <source src="../assets/audio/E_mineur.wav" type="audio/wav">
                     </audio> 
                   </div>
+              <p>Position n° </p> 
                   <select name="mi_mineur">
                   <option value="0">0</option>
                   <option value="1">1</option>
@@ -120,6 +124,7 @@ require '../controllers/composeController.php';
                       <source src="../assets/audio/F_majeur.wav" type="audio/wav">
                       </audio> 
                     </div>
+                    <p>Position n° </p> 
                     <select name="fa_majeur">
                   <option value="0">0</option>
                   <option value="1">1</option>
@@ -142,6 +147,7 @@ require '../controllers/composeController.php';
                         <source src="../assets/audio/G_majeur.wav" type="audio/wav">
                         </audio> 
                       </div>
+                       <p>Position n° </p> 
                       <select name="sol_majeur">
                   <option value="0">0</option>
                   <option value="1">1</option>
@@ -161,6 +167,7 @@ require '../controllers/composeController.php';
                           <source src="../assets/audio/A_mineur.wav" type="audio/wav">
                           </audio> 
                        </div>
+                        <p>Position n° </p> 
                         <select name="la_mineur">
                   <option value="0">0</option>
                   <option value="1">1</option>
@@ -180,7 +187,8 @@ require '../controllers/composeController.php';
                             <source src="../assets/audio/B_dim.wav" type="audio/wav">
                             </audio> 
                           </div>
-                          <select name="si_diminué">
+                          <p>Position n° </p> 
+                          <select name="si_diminue">
                   <option value="0">0</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -191,7 +199,9 @@ require '../controllers/composeController.php';
                         </div>
                       </div>
                     </div>
+          <input type="submit" value="choisir"/>
                    </form> 
+      <!-- fin du formulaire -->
                   </div>
 <!--                  <div class="jumbotron jumbotron-fluid">
                     <div class="container">
