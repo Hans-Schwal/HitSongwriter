@@ -39,7 +39,7 @@ session_start();
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1>Bienvenue <?= $_SESSION['userName'] . ' '?></h1>        
-      <p class="lead">Vous êtes içi dans votre espace personnel</p>
+      <p class="lead">Vous êtes ici dans votre espace personnel</p>
     </div>
   </div>    
   <div class="jumbotron jumbotron-fluid">
@@ -53,7 +53,7 @@ session_start();
             <th>Mail</th>
             <th>Nom d'utilisateur</th>
             <th>Password</th>
-            <th>Profil</th>
+<!--            <th>Profil</th>-->
           </tr>
         </thead>
         <tbody>
@@ -63,9 +63,9 @@ session_start();
             <td><?= $_SESSION['mail'];?></td>
             <td><?= $_SESSION['userName'];?></td>
             <td><?= $_SESSION['password'];?></td>
-            <td>
-              <a class="btn btn-warning" href="updateByUser.php">Modifier</a>'
-            </td>
+<!--            <td>-->
+<!--              <a class="btn btn-warning" href="updateByUser.php">Modifier</a>-->
+<!--            </td>-->
           </tr>
         </tbody>
       </table>

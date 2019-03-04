@@ -46,177 +46,162 @@ require '../controllers/composeController.php';
     </div>
   </div>
   <div class="jumbotron jumbotron-fluid">
-      <!-- formulaire -->
-      <form action="compose.php" method="post">  
-    <div class="container">
-      <p class="display-4">Do majeur<p>
-        <p class="lead">Choisissez 4 degrés</p>
-        <!-- première rangée de cards -->
-        <div class="row">  
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title">I</h3>
-                <p>Do majeur</p>
-              </div>
-              <audio controls>
-                <source src="../assets/audio/C_majeur.wav" type="audio/wav">
-                </audio> 
-              </div>
-              <p>Position n° </p> 
-              <select name="do_majeur">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-              </select>
-              
-<!--              <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>-->
-            </div>
+    <!-- formulaire -->
+    <form action="compose.php" method="post">  
+      <div class="container">
+        <p class="display-4">Do majeur<p>
+          <p class="lead">Choisissez 4 degrés</p>
+          <!-- première rangée de cards -->
+          <div class="row">  
             <div class="col-sm-3">
               <div class="card">
                 <div class="card-body">
-                  <h3 class="card-title">ii</h3>
-                  <p>Ré mineur</p>
+                  <h3 class="card-title">I</h3>
+                  <p>Do majeur</p>
                 </div>
                 <audio controls>
-                  <source src="../assets/audio/D_mineur.wav" type="audio/wav">
+                  <source src="../assets/audio/C_majeur.wav" type="audio/wav">
                   </audio> 
                 </div>
-              <p>Position n° </p>                 
-                <select name="re_mineur">
+                <p>Position n° </p> 
+                <select name="do_majeur">
                   <option value="0">0</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
-              </select>
-<!--                <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>              -->
+                </select>>
               </div>
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <h3 class="card-title">iii</h3>
-                    <p>Mi mineur</p>
+                    <h3 class="card-title">ii</h3>
+                    <p>Ré mineur</p>
                   </div>
                   <audio controls>
-                    <source src="../assets/audio/E_mineur.wav" type="audio/wav">
+                    <source src="../assets/audio/D_mineur.wav" type="audio/wav">
                     </audio> 
                   </div>
-              <p>Position n° </p> 
-                  <select name="mi_mineur">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-              </select>
-<!--                  <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>              -->
+                  <p>Position n° </p>                 
+                  <select name="re_mineur">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
                 </div>
                 <div class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
-                      <h3 class="card-title">IV</h3>
-                      <p>Fa majeur</p>
+                      <h3 class="card-title">iii</h3>
+                      <p>Mi mineur</p>
                     </div>
                     <audio controls>
-                      <source src="../assets/audio/F_majeur.wav" type="audio/wav">
+                      <source src="../assets/audio/E_mineur.wav" type="audio/wav">
                       </audio> 
                     </div>
                     <p>Position n° </p> 
-                    <select name="fa_majeur">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-              </select>
-<!--                    <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>-->
-                  </div>          
-                </div>          
-                <!-- seconde rangée de cards -->
-                <div class="row"> 
-                  <div class="col-sm-3 offset-2">
+                    <select name="mi_mineur">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <h3 class="card-title">V</h3>
-                        <p>Sol majeur</p>
+                        <h3 class="card-title">IV</h3>
+                        <p>Fa majeur</p>
                       </div>
                       <audio controls>
-                        <source src="../assets/audio/G_majeur.wav" type="audio/wav">
+                        <source src="../assets/audio/F_majeur.wav" type="audio/wav">
                         </audio> 
                       </div>
-                       <p>Position n° </p> 
-                      <select name="sol_majeur">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-              </select>
-<!--                      <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>-->
-                    </div>
-                    <div class="col-sm-3">
+                      <p>Position n° </p> 
+                      <select name="fa_majeur">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </div>          
+                  </div>          
+                  <!-- seconde rangée de cards -->
+                  <div class="row"> 
+                    <div class="col-sm-3 offset-2">
                       <div class="card">
                         <div class="card-body">
-                          <h3 class="card-title">vi</h3>
-                          <p>La mineur</p>
+                          <h3 class="card-title">V</h3>
+                          <p>Sol majeur</p>
                         </div>
                         <audio controls>
-                          <source src="../assets/audio/A_mineur.wav" type="audio/wav">
+                          <source src="../assets/audio/G_majeur.wav" type="audio/wav">
                           </audio> 
-                       </div>
+                        </div>
                         <p>Position n° </p> 
-                        <select name="la_mineur">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-              </select>
-<!--                        <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>                -->
+                        <select name="sol_majeur">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
                       </div>
                       <div class="col-sm-3">
                         <div class="card">
                           <div class="card-body">
-                            <h3 class="card-title">vii</h3>
-                            <p>Si diminué</p>
+                            <h3 class="card-title">vi</h3>
+                            <p>La mineur</p>
                           </div>
                           <audio controls>
-                            <source src="../assets/audio/B_dim.wav" type="audio/wav">
+                            <source src="../assets/audio/A_mineur.wav" type="audio/wav">
                             </audio> 
                           </div>
                           <p>Position n° </p> 
-                          <select name="si_diminue">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-              </select>
-<!--                          <a class="btn btn-warning btn-lg" href="compose.php?id=<?php echo $id?>" role="button" name="choose">Choisir</a>                -->
+                          <select name="la_mineur">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="card">
+                            <div class="card-body">
+                              <h3 class="card-title">vii</h3>
+                              <p>Si diminué</p>
+                            </div>
+                            <audio controls>
+                              <source src="../assets/audio/B_dim.wav" type="audio/wav">
+                              </audio> 
+                            </div>
+                            <p>Position n° </p> 
+                            <select name="si_diminue">
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
-                    </div>
-          <input type="submit" value="choisir"/>
-                   </form> 
-      <!-- fin du formulaire -->
+                      <input type="submit" value="choisir"/>
+                    </form> 
+                    <!-- fin du formulaire -->
                   </div>
-<!--                  <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                      <h2 class="display-4">Votre composition</h2>
-                      <?php 
-                      
-                      ?>
-                    </div>-->
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
